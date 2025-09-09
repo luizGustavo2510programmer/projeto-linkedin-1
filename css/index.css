@@ -108,6 +108,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: #F8F9FA;
 }
 
 /* Conteiner barra de navegação */
@@ -125,6 +126,7 @@ body {
     margin: 0px 15px;
     transition: all .08s;
     color: #343A40;
+    text-decoration: none;
 }
 
 /* Âncoras da barra de navegação (hover)*/
@@ -192,7 +194,7 @@ body {
 
 #main-pagina {
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -212,6 +214,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 #p1-titulo-main {
@@ -222,6 +225,11 @@ body {
   font-size: 40px;
 }
 
+#p-subtitulo {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 figure img {
   height: 380px;
   width: 380px;
@@ -230,7 +238,7 @@ figure img {
 #div-imagens-main {
   display: flex;
   flex-direction: row;
-  margin: 50px 15px;
+  margin: 40px 15px;
   justify-content: space-between;
 }
 
@@ -238,6 +246,47 @@ figcaption {
   text-align: justify;
   width: 380px;
   font-size: 18px;
+}
+
+#sec-cursos {
+  margin: 30px 20px;
+}
+
+#titulo-cursos {
+  font-size: 40px;
+  color: #23903c;
+  margin: 20px 0px;
+}
+
+.curso {
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 2px 2px 5px black;
+  margin: 30px 0px;
+}
+
+.descricao-curso {
+  display: flex;
+  flex-direction: row;
+} 
+
+.titulo-curso {
+  font-size: 25px;
+  color: #343A40;
+}
+
+.curso img {
+  margin-top: 30px;
+  height: 300px;
+  width: 350px;
+}
+
+.p-descricao {
+  width: 100%;
+  margin: 30px 50px;
+  color: #343A40;
+  font-size: 20px;
+  text-align: justify;
 }
 
 
