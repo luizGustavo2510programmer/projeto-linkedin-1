@@ -62,9 +62,41 @@
 
 /*Lato font*/
 
+/* PT sans font*/
+
+.pt-sans-regular {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-sans-bold {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-sans-regular-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-sans-bold-italic {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* PT sans font*/
+
 * {
     padding: 0px;
     margin: 0px;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* Conteiner header da página */
@@ -92,12 +124,13 @@
     padding: 3px 4px;
     margin: 0px 15px;
     transition: all .08s;
+    color: #343A40;
 }
 
 /* Âncoras da barra de navegação (hover)*/
 #nav-barra a:hover {
     border-radius: 5px;
-    background-color: #ffe8cc;
+    background-color: #e6e6ff;
     cursor: pointer;
     font-size: 22px;
     /* margin-left: 18px;
@@ -123,8 +156,8 @@
     width: 70px;
     padding: 6px;
     border: none;
-    background-color: #ff8c00;
-    color: #0d0d0d;
+    background-color: #007BFF;
+    color: #e6e6ff;
     transition: all .1s;
 }
 
@@ -135,8 +168,8 @@
     width: 70px;
     padding: 6px;
     border: none;
-    background-color: #0d0d0d;
-    color: #ff8c00;
+    background-color: #e6e6ff;
+    color: #007BFF;
     cursor: pointer;
 }
 
@@ -144,16 +177,68 @@
 #div-titulo-pagina p {
     margin-bottom: -14px;
     /* text-shadow: 1px 1px 2px #663800; */
-    color: #ff8c00;
+    color: #007BFF;
 }
 
 /* P1 título do header*/
 #titulo-1 {
-    margin-left: 25px;
-    font-size: 27px;
+    font-size: 30px;
 }
 
 /* P2 título do header*/
 #titulo-2 {
     font-size: 35px;
 }
+
+#main-pagina {
+  padding: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#div-titulo-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: #343A40;
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+#div-p-titulo-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#p1-titulo-main {
+  font-size: 35px;
+}
+
+#p2-titulo-main {
+  font-size: 40px;
+}
+
+figure img {
+  height: 380px;
+  width: 380px;
+}
+
+#div-imagens-main {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 15px;
+  justify-content: space-between;
+}
+
+figcaption {
+  text-align: justify;
+  width: 380px;
+  font-size: 18px;
+}
+
+
+
