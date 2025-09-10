@@ -217,22 +217,124 @@ body {
   margin-bottom: 20px;
 }
 
+@keyframes cor-fluindo {
+  0% { color: #007BFF; }
+  25% { color: #015bbb; }
+  50% { color: #004997; }
+  75% { color: #015bbb; }
+  100% { color: #007BFF; }
+}
+
 #p1-titulo-main {
-  font-size: 35px;
+  color: #007BFF;
+  font-size: 70px;
+  animation: cor-fluindo 5s infinite;
 }
 
 #p2-titulo-main {
-  font-size: 40px;
+  margin-top: -18px;
+  font-size: 35px;
 }
 
 #p-subtitulo {
-  font-size: 20px;
-  margin-top: 10px;
+  font-size: 21px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@keyframes imagens-crescendo1 {
+  0% {transform: scale(1.0);}
+  5% {transform: scale(1.0);}
+  10% {transform: scale(1.0);}
+  15% {transform: scale(1.0);}
+  20% {transform: scale(1.08);}
+  25% {transform: scale(1.08);}
+  30% {transform: scale(1.08);}
+  35% {transform: scale(1.08);}
+  40% {transform: scale(1.08);}
+  45% {transform: scale(1.08);}
+  50% {transform: scale(1.08);}
+  55% {transform: scale(1.08);}
+  60% {transform: scale(1.08);}
+  65% {transform: scale(1.08);}
+  70% {transform: scale(1.08);}
+  75% {transform: scale(1.08);}
+  80% {transform: scale(1.08);}
+  85% {transform: scale(1.0);}
+  90% {transform: scale(1.0);}
+  95% {transform: scale(1.0);}
+  100% {transform: scale(1.0);}
+}
+
+@keyframes imagens-crescendo2 {
+  0% {transform: scale(1.0);}
+  5% {transform: scale(1.0);}
+  10% {transform: scale(1.0);}
+  15% {transform: scale(1.0);}
+  20% {transform: scale(1.0);}
+  25% {transform: scale(1.0);}
+  30% {transform: scale(1.0);}
+  35% {transform: scale(1.0);}
+  40% {transform: scale(1.08);}
+  45% {transform: scale(1.08);}
+  50% {transform: scale(1.08);}
+  55% {transform: scale(1.08);}
+  60% {transform: scale(1.08);}
+  65% {transform: scale(1.08);}
+  70% {transform: scale(1.08);}
+  75% {transform: scale(1.08);}
+  80% {transform: scale(1.08);}
+  85% {transform: scale(1.0);}
+  90% {transform: scale(1.0);}
+  95% {transform: scale(1.0);}
+  100% {transform: scale(1.0);}
+}
+
+@keyframes imagens-crescendo3 {
+  0% {transform: scale(1.0);}
+  5% {transform: scale(1.0);}
+  10% {transform: scale(1.0);}
+  15% {transform: scale(1.0);}
+  20% {transform: scale(1.0);}
+  25% {transform: scale(1.0);}
+  30% {transform: scale(1.0);}
+  35% {transform: scale(1.0);}
+  40% {transform: scale(1.0);}
+  45% {transform: scale(1.0);}
+  50% {transform: scale(1.0);}
+  55% {transform: scale(1.0);}
+  60% {transform: scale(1.08);}
+  65% {transform: scale(1.08);}
+  70% {transform: scale(1.08);}
+  75% {transform: scale(1.08);}
+  80% {transform: scale(1.08);}
+  85% {transform: scale(1.0);}
+  90% {transform: scale(1.0);}
+  95% {transform: scale(1.0);}
+  100% {transform: scale(1.0);}
 }
 
 figure img {
+  border-radius: 20px;
   height: 380px;
   width: 380px;
+  transition: all .1s;
+}
+
+#img-figure-1 {
+  animation: imagens-crescendo1 8s infinite;
+}
+
+#img-figure-2 {
+  animation: imagens-crescendo2 8s infinite;
+}
+
+#img-figure-3 {
+  animation: imagens-crescendo3 8s infinite;
+}
+
+figure img:hover {
+  transform: scale(1.05);
 }
 
 #div-imagens-main {
@@ -246,6 +348,7 @@ figcaption {
   text-align: justify;
   width: 380px;
   font-size: 18px;
+  margin-top: 10px;
 }
 
 #sec-cursos {
@@ -261,8 +364,10 @@ figcaption {
 .curso {
   border-radius: 8px;
   padding: 15px;
-  box-shadow: 2px 2px 5px black;
-  margin: 30px 0px;
+  /* box-shadow: 2px 2px 5px black; */
+  border: 1px solid #79828b;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .descricao-curso {
@@ -271,23 +376,74 @@ figcaption {
 } 
 
 .titulo-curso {
-  font-size: 25px;
+  font-size: 28px;
   color: #343A40;
 }
 
 .curso img {
+  border-radius: 10px;
   margin-top: 30px;
   height: 300px;
   width: 350px;
+  transition: all .1s;
+}
+
+.curso img:hover {
+  transform: scale(1.02);
 }
 
 .p-descricao {
-  width: 100%;
-  margin: 30px 50px;
+  width: 900px;
   color: #343A40;
   font-size: 20px;
   text-align: justify;
 }
+
+.subdiv-descricao-curso {
+  margin: 30px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-titulo-topicos {
+  margin-top: 23px;
+  font-size: 20px;
+}
+
+.listas-topicos {
+  margin-top: 17px;
+  margin-left: 21px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lista-topicos li {
+  margin-bottom: 8px;
+  color: #343A40;
+  font-size: 18px;
+}
+
+.btn-iniciar-curso {
+  margin-left: 140px;
+  width: 200px;
+  height: 50px;
+  background-color: #007BFF;
+  color: #e6e6ff;
+  border: none;
+  font-size: 20px;
+  border-radius: 10px;
+  transition: all .1s;
+}
+
+.btn-iniciar-curso:hover {
+  color: #007BFF;
+  background-color: #e6e6ff;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
 
 
 
